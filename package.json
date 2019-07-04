@@ -1,0 +1,36 @@
+{
+  "name": "dgraph-node-example",
+  "version": "1.0.0",
+  "description": "Example node application which provides API endpoints using express to perform alteration, mutation, and querying.",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm build && node server.js",
+    "postinstall": "npm rebuild grpc --target=6.1.0 --target_arch=x64 --target_platform=linux --target_libc=glibc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Prashant Shahi",
+  "license": "ISC",
+  "dependencies": {
+    "dgraph-js": "^1.3.0-rc1",
+    "express": "^4.17.1",
+    "grpc": "^1.21.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prashant-shahi/dgraph-nodejs-example.git"
+  },
+  "keywords": [
+    "Dgraph",
+    "NodeJS",
+    "Graph",
+    "Database",
+    "Badger",
+    "Dgraph-JS",
+    "LinkedIn"
+  ],
+  "bugs": {
+    "url": "https://github.com/prashant-shahi/dgraph-nodejs-example/issues"
+  },
+  "homepage": "https://github.com/prashant-shahi/dgraph-nodejs-example#readme"
+}

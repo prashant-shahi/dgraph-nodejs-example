@@ -1,0 +1,76 @@
+_:company1 <company.name> "ABC" .
+_:company2 <company.name> "QRS" .
+_:company3 <company.name> "XYZ" .
+
+_:company1 <location> "Bengaluru" .
+_:company2 <location> "New Delhi" .
+_:company3 <location> "Mumbai" .
+
+_:user1 <user.name> "Alan" .
+_:user2 <user.name> "Bran" .
+_:user3 <user.name> "Coby" .
+_:user4 <user.name> "Daniel" .
+_:user5 <user.name> "Eric" .
+_:user6 <user.name> "Farhan" .
+_:user7 <user.name> "Glen" .
+_:user8 <user.name> "Hari" .
+_:user9 <user.name> "Immanuel" .
+
+_:user1 <works.for> _:company1 .
+_:user2 <works.for> _:company1 .
+_:user3 <works.for> _:company1 .
+
+_:user4 <works.for> _:company2 .
+_:user5 <works.for> _:company2 .
+
+_:user6 <works.for> _:company3 .
+_:user7 <works.for> _:company3 .
+_:user8 <works.for> _:company3 .
+_:user9 <works.for> _:company3 .
+
+_:user1 <age> "30" .
+_:user2 <age> "21" .
+_:user3 <age> "24" .
+_:user4 <age> "26" .
+_:user5 <age> "23" .
+_:user6 <age> "28" .
+_:user7 <age> "27" .
+_:user8 <age> "23" .
+_:user9 <age> "25" .
+
+_:user1 <connection> _:user2 .
+_:user1 <connection> _:user3 .
+_:user1 <connection> _:user4 .
+_:user1 <connection> _:user6 .
+_:user1 <connection> _:user7 .
+
+_:user2 <connection> _:user1 .
+_:user2 <connection> _:user3 .
+
+_:user3 <connection> _:user1 .
+_:user3 <connection> _:user2 .
+
+_:user4 <connection> _:user1 .
+_:user4 <connection> _:user5 .
+_:user4 <connection> _:user6 .
+
+_:user5 <connection> _:user4 .
+_:user5 <connection> _:user6 .
+
+_:user6 <connection> _:user1 .
+_:user6 <connection> _:user7 .
+_:user6 <connection> _:user8 .
+_:user6 <connection> _:user9 .
+
+_:user7 <connection> _:user1 .
+_:user7 <connection> _:user6 .
+_:user7 <connection> _:user8 .
+_:user7 <connection> _:user9 .
+
+_:user8 <connection> _:user6 .
+_:user8 <connection> _:user7 .
+_:user8 <connection> _:user9 .
+
+_:user9 <connection> _:user6 .
+_:user9 <connection> _:user7 .
+_:user9 <connection> _:user8 .

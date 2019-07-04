@@ -1,0 +1,5 @@
+company.name: string @index(term) .
+user.name: string @index(term) .
+works.for: uid @reverse .
+age: int .
+location: string @index(term) .
