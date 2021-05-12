@@ -13,7 +13,7 @@
   "dependencies": {
     "dgraph-js": "^1.3.0-rc1",
     "express": "^4.17.1",
-    "grpc": "^1.21.1"
+    "grpc": "^1.24.9"
   },
   "devDependencies": {},
   "repository": {
